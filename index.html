@@ -1,271 +1,274 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Project Title</title>
-<meta charset="utf-8">
-<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
-<style> @-ms-viewport { width: device-width; } </style>
-<link rel="stylesheet" href="vendor/reset.min.css">
-<link rel="stylesheet" href="style.css">
-</head>
-<body class="multiple-scenes ">
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Explore o campus da Faculdade Adventista do Paraná (FAP) em um tour virtual 360°. Conheça nossos espaços acadêmicos, áreas verdes e estrutura completa de forma interativa.">
+    <meta name="keywords" content="tour virtual 360, Faculdade Adventista do Paraná, FAP, campus FAP, Colégio Adventista, Marzipano, educação, adventista, ensino superior, visita virtual, faculdade no Paraná">
+    <meta name="author" content="Faculdade Adventista do Paraná">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+    <style> @-ms-viewport { width: device-width; } </style>
+    <link rel="stylesheet" href="vendor/reset.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Tour Virutal 360º - Colégio Adventista da FAP</title>
+  </head>
+  <body class="multiple-scenes ">
+    <div id="pano"></div>
 
-<div id="pano"></div>
+    <div id="sceneList">
+      <ul class="scenes">
+        
+          <a href="javascript:void(0)" class="scene" data-id="0-portaria">
+            <li class="text">Portaria</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="1-esarte">
+            <li class="text">Esarte</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="2-interior-esarte">
+            <li class="text">Interior Esarte</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="3-ctec">
+            <li class="text">CTec</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="4-interior-ctec">
+            <li class="text">Interior CTec</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="5-prdio-dos-funcionrios">
+            <li class="text">Prédio dos Funcionários</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="6-igreja-da-fap">
+            <li class="text">Igreja da FAP</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="7-interior-igreja-da-fap">
+            <li class="text">Interior Igreja da FAP</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="8-prdio-educao-bsica">
+            <li class="text">Prédio Educação Básica</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="9-ptio-escolar">
+            <li class="text">Pátio Escolar</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="10-educao-infantil">
+            <li class="text">Educação Infantil</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="11-educao-infantil">
+            <li class="text">Educação Infantil</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="12-educao-infantil">
+            <li class="text">Educação Infantil</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="13-educao-infantil">
+            <li class="text">Educação Infantil</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="14-laboratrio-de-biologia">
+            <li class="text">Laboratório de Biologia</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="15-recepo">
+            <li class="text">Recepção</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="16-biblioteca-do-infantil">
+            <li class="text">Biblioteca do Infantil</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="17-recepo">
+            <li class="text">Recepção</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="18-centro-de-convivncia">
+            <li class="text">Centro de Convivência</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="19-interior-centro-de-convivncia">
+            <li class="text">Interior Centro de Convivência</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="20-biblioteca-ensino-superior">
+            <li class="text">Biblioteca Ensino Superior</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="21-interior-biblioteca-ensino-superior">
+            <li class="text">Interior Biblioteca Ensino Superior</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="22-prdio-ensino-superior">
+            <li class="text">Prédio Ensino Superior</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="23-interior-ensino-superior">
+            <li class="text">Interior Ensino Superior</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="24-interior-ensino-superior">
+            <li class="text">Interior Ensino Superior</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="25-sete-copas">
+            <li class="text">Sete Copas</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="26-administrativo">
+            <li class="text">Administrativo</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="27-administrativo">
+            <li class="text">Administrativo</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="28-administrativo">
+            <li class="text">Administrativo</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="29-campus">
+            <li class="text">Campus</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="30-residencial-feminino">
+            <li class="text">Residencial Feminino</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="31-residencial-feminino">
+            <li class="text">Residencial Feminino</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="32-auditrio-feminino">
+            <li class="text">Auditório Feminino</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="33-campus">
+            <li class="text">Campus</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="34-enfermaria">
+            <li class="text">Enfermaria</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="35-enfermaria">
+            <li class="text">Enfermaria</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="36-lavanderia">
+            <li class="text">Lavanderia</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="37-campus">
+            <li class="text">Campus</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="38-restaurante">
+            <li class="text">Restaurante</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="39-restaurante">
+            <li class="text">Restaurante</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="40-residencial-masculino">
+            <li class="text">Residencial Masculino</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="41-auditrio-masculino">
+            <li class="text">Auditório Masculino</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="42-rea-esportiva">
+            <li class="text">Área Esportiva</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="43-ginsio">
+            <li class="text">Ginásio</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="44-interior-ginsio">
+            <li class="text">Interior Ginásio</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="45-complexo-esportivo">
+            <li class="text">Complexo Esportivo</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="46-complexo-esportivo">
+            <li class="text">Complexo Esportivo</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="47-quadra-poliesportiva">
+            <li class="text">Quadra Poliesportiva</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="48-piscina-externa">
+            <li class="text">Piscina Externa</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="49-academia">
+            <li class="text">Academia</li>
+          </a>
+        
+          <a href="javascript:void(0)" class="scene" data-id="50-piscina-trmica">
+            <li class="text">Piscina Térmica</li>
+          </a>
+        
+      </ul>
+    </div>
 
-<div id="sceneList">
-  <ul class="scenes">
-    
-      <a href="javascript:void(0)" class="scene" data-id="0-portaria">
-        <li class="text">Portaria</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="1-esarte">
-        <li class="text">Esarte</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="2-interior-esarte">
-        <li class="text">Interior Esarte</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="3-ctec">
-        <li class="text">CTec</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="4-interior-ctec">
-        <li class="text">Interior CTec</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="5-prdio-dos-funcionrios">
-        <li class="text">Prédio dos Funcionários</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="6-igreja-da-fap">
-        <li class="text">Igreja da FAP</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="7-interior-igreja-da-fap">
-        <li class="text">Interior Igreja da FAP</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="8-prdio-educao-bsica">
-        <li class="text">Prédio Educação Básica</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="9-ptio-escolar">
-        <li class="text">Pátio Escolar</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="10-educao-infantil">
-        <li class="text">Educação Infantil</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="11-educao-infantil">
-        <li class="text">Educação Infantil</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="12-educao-infantil">
-        <li class="text">Educação Infantil</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="13-educao-infantil">
-        <li class="text">Educação Infantil</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="14-laboratrio-de-biologia">
-        <li class="text">Laboratório de Biologia</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="15-recepo">
-        <li class="text">Recepção</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="16-biblioteca-do-infantil">
-        <li class="text">Biblioteca do Infantil</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="17-recepo">
-        <li class="text">Recepção</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="18-centro-de-convivncia">
-        <li class="text">Centro de Convivência</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="19-interior-centro-de-convivncia">
-        <li class="text">Interior Centro de Convivência</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="20-biblioteca-ensino-superior">
-        <li class="text">Biblioteca Ensino Superior</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="21-interior-biblioteca-ensino-superior">
-        <li class="text">Interior Biblioteca Ensino Superior</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="22-prdio-ensino-superior">
-        <li class="text">Prédio Ensino Superior</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="23-interior-ensino-superior">
-        <li class="text">Interior Ensino Superior</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="24-interior-ensino-superior">
-        <li class="text">Interior Ensino Superior</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="25-sete-copas">
-        <li class="text">Sete Copas</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="26-administrativo">
-        <li class="text">Administrativo</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="27-administrativo">
-        <li class="text">Administrativo</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="28-administrativo">
-        <li class="text">Administrativo</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="29-campus">
-        <li class="text">Campus</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="30-residencial-feminino">
-        <li class="text">Residencial Feminino</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="31-residencial-feminino">
-        <li class="text">Residencial Feminino</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="32-auditrio-feminino">
-        <li class="text">Auditório Feminino</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="33-campus">
-        <li class="text">Campus</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="34-enfermaria">
-        <li class="text">Enfermaria</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="35-enfermaria">
-        <li class="text">Enfermaria</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="36-lavanderia">
-        <li class="text">Lavanderia</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="37-campus">
-        <li class="text">Campus</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="38-restaurante">
-        <li class="text">Restaurante</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="39-restaurante">
-        <li class="text">Restaurante</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="40-residencial-masculino">
-        <li class="text">Residencial Masculino</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="41-auditrio-masculino">
-        <li class="text">Auditório Masculino</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="42-rea-esportiva">
-        <li class="text">Área Esportiva</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="43-ginsio">
-        <li class="text">Ginásio</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="44-interior-ginsio">
-        <li class="text">Interior Ginásio</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="45-complexo-esportivo">
-        <li class="text">Complexo Esportivo</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="46-complexo-esportivo">
-        <li class="text">Complexo Esportivo</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="47-quadra-poliesportiva">
-        <li class="text">Quadra Poliesportiva</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="48-piscina-externa">
-        <li class="text">Piscina Externa</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="49-academia">
-        <li class="text">Academia</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="50-piscina-trmica">
-        <li class="text">Piscina Térmica</li>
-      </a>
-    
-  </ul>
-</div>
+    <div id="titleBar">
+      <h1 class="sceneName"></h1>
+    </div>
 
-<div id="titleBar">
-  <h1 class="sceneName"></h1>
-</div>
+    <a href="javascript:void(0)" id="autorotateToggle">
+      <img class="icon off" src="img/play.png">
+      <img class="icon on" src="img/pause.png">
+    </a>
 
-<a href="javascript:void(0)" id="autorotateToggle">
-  <img class="icon off" src="img/play.png">
-  <img class="icon on" src="img/pause.png">
-</a>
+    <a href="javascript:void(0)" id="fullscreenToggle">
+      <img class="icon off" src="img/fullscreen.png">
+      <img class="icon on" src="img/windowed.png">
+    </a>
 
-<a href="javascript:void(0)" id="fullscreenToggle">
-  <img class="icon off" src="img/fullscreen.png">
-  <img class="icon on" src="img/windowed.png">
-</a>
+    <a href="javascript:void(0)" id="sceneListToggle">
+      <img class="icon off" src="img/expand.png">
+      <img class="icon on" src="img/collapse.png">
+    </a>
 
-<a href="javascript:void(0)" id="sceneListToggle">
-  <img class="icon off" src="img/expand.png">
-  <img class="icon on" src="img/collapse.png">
-</a>
+    <a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+      <img class="icon" src="img/up.png">
+    </a>
+    <a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+      <img class="icon" src="img/down.png">
+    </a>
+    <a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+      <img class="icon" src="img/left.png">
+    </a>
+    <a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+      <img class="icon" src="img/right.png">
+    </a>
+    <a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+      <img class="icon" src="img/plus.png">
+    </a>
+    <a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+      <img class="icon" src="img/minus.png">
+    </a>
 
-<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
-  <img class="icon" src="img/up.png">
-</a>
-<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
-  <img class="icon" src="img/down.png">
-</a>
-<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
-  <img class="icon" src="img/left.png">
-</a>
-<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
-  <img class="icon" src="img/right.png">
-</a>
-<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
-  <img class="icon" src="img/plus.png">
-</a>
-<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
-  <img class="icon" src="img/minus.png">
-</a>
+    <script src="vendor/screenfull.min.js" ></script>
+    <script src="vendor/bowser.min.js" ></script>
+    <script src="vendor/marzipano.js" ></script>
 
-<script src="vendor/screenfull.min.js" ></script>
-<script src="vendor/bowser.min.js" ></script>
-<script src="vendor/marzipano.js" ></script>
-
-<script src="data.js"></script>
-<script src="index.js"></script>
-
-</body>
+    <script src="data.js"></script>
+    <script src="index.js"></script>
+  </body>
 </html>
